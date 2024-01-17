@@ -179,10 +179,12 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  color: white;
 }
 
 .section__text p {
   font-weight: 600;
+  color: white;
 }
 
 .section__text__p1 {
@@ -227,6 +229,7 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: white;
 }
 
 .btn-color-1,
@@ -246,7 +249,7 @@ section {
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: white;
 }
 
 .btn-color-2 {
