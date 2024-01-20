@@ -1,404 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>Hazzem's Personal Website</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Icons
+	================================================== -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics
+   ================================================== -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LFSK6W596W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LFSK6W596W");
+    </script>
   </head>
+
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Hazzem Sukar</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- Header
+   ================================================== -->
+    <header id="home">
+      <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation"
+          >Show navigation</a
+        >
+        <a class="mobile-btn" href="#" title="Hide navigation"
+          >Hide navigation</a
+        >
+
+        <ul id="nav" class="nav">
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+          <li><a class="smoothscroll" href="#activities">Activities</a></li>
+          <li><a class="smoothscroll" href="#stats">Statistics</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Hazzem Sukar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/backgroundimg.png" alt="Hazzem Sukar profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Hazzem Sukar</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/hazzem-sukar-b8a814260/"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Hazzem11"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Projects</h3>
-              <p> 40+ <br />Frontend and Backend Development</p>
+        <!-- end #nav -->
+
+        <hr />
+
+        <div class="head_banner">
+          <div class="banner__content">
+            <div class="banner__text">
+              Click here to view the
+              <a href="https://github.com/Hazzem11/Personal-Website" target="_blank"
+                >              Github for this website
+                </a
+              >!
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.S. in Computer Science at University of Ottawa</p>
-            </div>
+            <button class="banner__close">
+              <span class="material-icons">close</span>
+            </button>
           </div>
-          <div class="text-container">
-            <p>
-              I am 2nd year a computer science student at the University of Ottawa, class of 2026.
-               I'm currently seeking a co-op position for the 2024 summer term. 
-               My primary intrests are in cyber security and networking.
+          <!-- end #banner__content -->
+        </div>
+      </nav>
+      <!-- end #nav-wrap -->
+
+      <div class="row banner">
+        <div class="banner-text">
+          <h1 class="responsive-headline">Hazzem Sukar</h1>
+          <h3>
+            <span>Computer Science Student</span> |
+            <span>Full Stack Developer</span>
+          </h3>
+          <hr />
+          <ul class="social">
+            <li>
+              <a href="https://github.com/swkang73"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/swkang73/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:sunnybd97@gmail.com"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://join.skype.com/invite/QjGfYjfvQS1t"
+                ><i class="fa fa-skype"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="scrolldown">
+        <a class="smoothscroll" href="#about"
+          ><i class="icon-down-circle"></i
+        ></a>
+      </p>
+    </header>
+    <!-- Header End -->
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>About</h5>
+          <h1>Let me introduce myself.</h1>
+
+          <div class="intro-info">
+            <img src="images/profilepic.png" alt="Profile Picture" />
+
+            <p class="lead">
+              I'm a 2nd year student at the University of Ottawa, pursuing a
+              B.S. in Computer Science, class of 2026. My primary interests are
+              full stack software development and cybersecurity, but honestly
+              it's still very early in my career so the list is always growing
+              dynaimcally.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basics</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React JS</h3>
-                  <p>Basics</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3> XML</h3>
-                  <p>Basics</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Basics</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+      <!-- /section-intro -->
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p>
+            I'm currently looking for a co-op position for the summer 2024 term
+            in the computer science field. If you think I'm a good fit, please
+            contant me via
+            <a href="mailto:hazzem.sukar11@gmail.com"
+              >hazzem.sukar11@gmail.com</a
+            >.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Hazzem Sukar</span>
+            </li>
+            <li>
+              <strong>Birth Date:</strong>
+              <span>December 11, 2004</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>hazzem.sukar11@gmail.com</span>
+            </li>
+          </ul>
+          <!-- /info-list -->
+        </div>
+
+        <div class="col-six tab-full">
+          <h3>Skills</h3>
+          <p>
+            I am a self-reliant teamworker, proficient in software design and
+            coding. Below are highlights of my technical skills:
+          </p>
+
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>Java</strong>
+            </li>
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>Python</strong>
+            </li>
+            <li>
+              <div class="progress percent70"><span>70%</span></div>
+              <strong>JS/HTML/CSS/React</strong>
+            </li>
+            <li>
+              <div class="progress percent60"><span>60%</span></div>
+              <strong>C/C++</strong>
+            </li>
+          </ul>
+          <!-- /skill-bars -->
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+            >Hire Me</a
+          >
+          <a
+            href="files/resume.pdf"
+            title="Download CV"
+            class="button button-primary"
+            >Download CV</a
+          >
+        </div>
+      </div>
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Calendar App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
+    <!-- /process-->
+
+    <!-- Resume Section
+   ================================================== -->
+    <section id="resume">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Resume</h5>
+          <h1>More of my credentials.</h1>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <!-- Work experience 
+      ----------------------------------------------- -->
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header"></div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve resume-header">
+          <h2>Background Education</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-pencil"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Bachelor Degree</h3>
+                <p>September 2022 - Present</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>University of Ottawa</h4>
+                <p> Honours BSc Computer Science<br> 
+                  Merit's Scholarship. Deans Honour's List: 2022-Present 
+                  </p>
                 
-                onclick="location.href='https://github.com/'" 
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+
+              </div>
             </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa fa-pencil"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>High School Degree</h3>
+                <p>September 2016 - June 2022</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Earl of March Secondary School</h4>
+                <p>Graduated with silver medal distinction</p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Flappy Bird Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">LandingPage Template</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-4.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ParkingLot Simulator</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-5.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Mastermind Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+    </section>
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Projects</h5>
+          <h1>Check out my creations.</h1>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <!-- /section-intro -->
+
+      <div class="row">
+        <div class="twelve columns collapsed">
+          <!-- portfolio-wrapper -->
+          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-01" title="">
+                  <img alt="" src="images/portfolio/calendar.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Calendar Website</h5>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-02" title="">
+                  <img alt="" src="images/portfolio/flappybird.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>FlappyBird Game Web Clone</h5>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-03" title="">
+                  <img alt="" src="images/portfolio/androidCyclingApp.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Android Cycling App</h5>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-04" title="">
+                  <img alt="" src="images/portfolio/evently.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Evently</h5>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+          </div>
+          <!-- portfolio-wrapper end -->
+        </div>
+        <!-- twelve columns end -->
+
+        <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+        <div id="modal-01" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/calendar.png"
+            alt=""
+          />
+
+          <div class="description-box">
+            <h4>Calendar Website</h4>
+            <p>
+              Allows users to stay organized and plan out their days, weeks, or
+              months with a simple to use add task feature all built using
+              React-Big-Calendar and React-Date-Picker.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>HTML/CSS/JS/React</span
+            >
+          </div>
+
+          <div class="link-box">
+            <a href="https://github.com/Hazzem11/Calendar-app" target="_blank"
+              >Github</a
+            >
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-01 End -->
+
+        <div id="modal-02" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/flappybird.png"
+            alt=""
+          />
+
+          <div class="description-box">
+            <h4>FlappyBird Game Web Clone</h4>
+            <p>
+              Created a clone of the famous FlappyBird mobile game where the
+              goal of the game is to get a bird through horizontally moving
+              pipes by only jumping up. Built in java using the Swing GUI
+              library for rendering animations and graphics. Can be played using
+              keyboard and mouse listeners on desktop
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i> Java Swing</span
+            >
+          </div>
+
+          <div class="link-box">
+            <a href="https://github.com/Hazzem11/FlappyBird-Clone" target="_blank"
+              >Github</a
+            >
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-02 End -->
+
+        <div id="modal-03" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/androidCyclingApp.png"
+            alt=""
+          />
+
+          <div class="description-box">
+            <h4>Android Cycling App</h4>
+            <p>
+              Group project built with the using Android Studio this app lets
+              cyclists register for cycling activities posted by cycling clubs.
+              The app used Firebase to store data such as, users clubs and
+              events. Worked on the majority of the frontend components of the
+              app.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i> HTML/CSS/JS</span
+            >
+          </div>
+
+          <div class="link-box">
+            <a
+              href="https://github.com/Hazzem11/AndroidCyclingApp"
+              target="_blank"
+              >Github</a
+            >
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-03 End -->
+
+        <div id="modal-04" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/evently.png"
+            alt=""
+          />
+
+          <div class="description-box">
+            <h4>LandingPage Template & User Authentication</h4>
+            <p>
+              A template for an event planner website that I am currently
+              working on. Allows for user authentication and backend is built
+              using NodeJS and MYSQl. Frontend is designed to have a modern and
+              clean look using React.
+            </p>
+            <span class="categories"><i class="fa fa-tag"></i>HTML/CSS/JS/React/NodeJS/SQL</span>
+          </div>
+
+          <div class="link-box">
+            <a href="https://github.com/Hazzem11/Evently" target="_blank"
+              >Github</a
+            >
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-04 End -->
+      </div>
+      <!-- row End -->
     </section>
+    <!-- Portfolio Section End-->
+
+    <!-- contact
+   ================================================== -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="hazzem.sukar11@gmail.com">hazzem.sukar11@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/hazzem-sukar-b8a814260/">LinkedIn</a></p>
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Contact</h5>
+          <h1>I'd Love To Connect With You.</h1>
+
+          <p class="lead">Let me get to know more about you.</p>
         </div>
       </div>
+      <!-- /section-intro -->
+
+      <div class="row contact-info">
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="fa fa-location-arrow"></i>
+          </div>
+
+          <h5>Where to find me</h5>
+
+          <p>
+            Kanata, ON<br />
+            K2T0H2
+          </p>
+        </div>
+
+        <div class="col-four tab-full collapse">
+          <div class="icon">
+            <i class="icon-mail"></i>
+          </div>
+
+          <h5>Email Me At</h5>
+
+          <p>hazzem.sukar11@gmail.com<br /></p>
+        </div>
+
+        <div class="col-four tab-full collapse">
+          <div class="icon">
+            <i class="fa fa-linkedin"></i>
+          </div>
+
+          <h5>Let's Connect</h5>
+          <a
+            href="https://www.linkedin.com/in/hazzem-sukar-b8a814260/"
+            target="_blank"
+            >LinkedIn Profile</a
+          >
+        </div>
+      </div>
+      <!-- /contact-info -->
     </section>
+    <!-- /contact -->
+
+    <!-- footer
+   ================================================== -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <div class="row">
+        <div class="twelve columns">
+          <ul class="copyright">
+            <li>Edit by Hazzem Sukar</li>
+            <li>&copy; Copyright 2014 CeeVee</li>
+            <li>
+              Design by
+              <a title="Styleshout" href="http://www.styleshout.com/"
+                >Styleshout</a
+              >
+            </li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 Hazzem Sukar. All Rights Reserved.</p>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#home"
+            ><i class="icon-up-open"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- Footer End-->
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
+    </script>
+    <script
+      type="text/javascript"
+      src="js/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
