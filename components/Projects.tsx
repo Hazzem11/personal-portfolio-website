@@ -22,6 +22,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "SpoilERT",
+    description:
+      "Chrome extension that detects and masks spoiler-risk text on Google Search until you choose to reveal it. Watchlist-driven protection with on-device DistilBERT classification via Transformers.js — no cloud inference.",
+    image: "/images/spoilert.png",
+    tech: ["TypeScript", "React", "Chrome Extension", "Transformers.js"],
+    github: "https://github.com/Hazzem11/SpoiLERT",
+    categories: ["All", "Web", "Web3 & AI"],
+    featured: true,
+  },
+  {
     title: "Automated Referee Scheduling System",
     description:
       "Platform that assigns referees to games based on availability, preferences, and scheduling constraints. Admins and refs manage assignments through a clean interface with fair, automated match coverage.",
